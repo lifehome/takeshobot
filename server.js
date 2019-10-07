@@ -19,5 +19,5 @@ server.use(restify.plugins.bodyParser({
 server.post('/botService', botHandler(req, res, next));
 
 // Final catch-all handler
-server.get('*'. catchAllHandler(req, res, next));
-server.post('*'. catchAllHandler(req, res, next));
+server.get('*', catchAllHandler(req, res, next));
+server.post('*', catchAllHandler(req, res, next));
