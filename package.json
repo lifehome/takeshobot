@@ -4,7 +4,7 @@
   "description": "A telegram bot to keep track venue keyholders' presences.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx babel-node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,14 @@
   },
   "homepage": "https://github.com/lifehome/takeshobot#readme",
   "dependencies": {
+    "dotenv": "^8.1.0",
     "restify": "^8.4.0",
-    "telegraf": "^3.32.0"
+    "telegraf": "^3.32.0",
+    "telegraf-i18n": "^6.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3"
   }
 }
