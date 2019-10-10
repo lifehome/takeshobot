@@ -37,7 +37,7 @@ instance.catch((err) => {
 // Register module with corresponding event -- END
 
 // Use localtunnel.me when in development envrionment
-if (process.env.NODE_ENV == "development")
+if (process.env.NODE_ENV != "production")
   instance.telegram.setWebhook(`https://${process.env.localtunnel_name}.localtunnel.me/botService`)
 
 // restify handler for bot functionality
