@@ -47,7 +47,7 @@ const botInstance = (req, res, next)=>{
 
   // Configure response context
   res.status(200)
-  res.json({"result": "Request accepted."})
+  res.json({"result": "OK"})
   next()
 }
 
